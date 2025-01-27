@@ -24,8 +24,9 @@
                         { 
                 for(int i = pickedAnswer.Length -1; i >= 0; i--)
                 {
-                            //if()
-                            if (pickedAnswer.Contains(guess))
+                           
+                            //if (pickedAnswer.Contains(guess))
+                            if(pickedAnswer.Substring(i).Contains(guess))
                             {
                                 Console.Write(guess);
                             }
