@@ -24,7 +24,11 @@
                         { 
                 for(int i = pickedAnswer.Length -1; i >= 0; i--)
                 {
-                    //if()
+                            //if()
+                            if (pickedAnswer.Contains(guess))
+                            {
+                                Console.Write(guess);
+                            }
                     Console.Write('_');//to show how many characters and also the empty spaces
                 }
                         }
