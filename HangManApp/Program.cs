@@ -11,6 +11,8 @@
             string[] answers = {"London", "Paris","Berlin","Tokyo","Beijing","Seoul","Brussels"};
             //char guess;
             bool gameEnd = false;
+            bool isGuess = false;
+            int wrongGuess = 0;//how many times you can get it wrong
             do
             {
                 while(gameEnd == false) 
@@ -22,13 +24,33 @@
                 string guess = Console.ReadLine();
                 if(guess.Length == 1) 
                         { 
+                        
                 for(int i = pickedAnswer.Length -1; i >= 0; i--)
                 {
-                           
-                            //if (pickedAnswer.Contains(guess))
-                            if(pickedAnswer.Substring(i).Contains(guess))
-                            {
-                                Console.Write(guess);
+                           char letter = pickedAnswer[i];
+                            Console.WriteLine(pickedAnswer);
+                            //if(pickedAnswer.Contains(guess))
+                            //{
+                            //    if (letter == guess)
+                            //    {
+                            //        Console.Write(guess);
+                            //    }
+
+                            //}
+                            for (int j = guess.Length - 1; j >= 0; j--)
+                            { 
+                                if(pickedAnswer[j] == guess[j])
+                                {
+                                    Console.Write(guess);
+                                }
+                                else if (!pickedAnswer.Contains(guess))
+                                {
+                                    wrongGuess++;
+                                }
+                                else if(wrongGuess == 6)
+                                {
+                                    break;
+                                }
                             }
                     Console.Write('_');//to show how many characters and also the empty spaces
                 }
