@@ -34,14 +34,7 @@
                 {
                            char letter = pickedAnswer[i];
                             Console.WriteLine(pickedAnswer);
-                            //if(pickedAnswer.Contains(guess))
-                            //{
-                            //    if (letter == guess)
-                            //    {
-                            //        Console.Write(guess);
-                            //    }
-
-                            //}
+                          
                             if (pickedAnswer.Contains(guess))
                             {
 
