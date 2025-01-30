@@ -12,7 +12,7 @@
             //char guess;
             bool gameEnd = false;
             bool isGuess = false;
-            int wrongGuess = 0;//how many times you can get it wrong
+            int lives = 5;
             //int pickedIndex = random.Next(0, answers.Length);
             //string pickedAnswer = answers[pickedIndex];
             string pickedAnswer = answers[1];
@@ -25,7 +25,7 @@
                 //pickedIndex = random.Next(0,answers.Length);
                 //pickedAnswer = answers[pickedIndex];
                 //Console.WriteLine(pickedAnswer); 
-                Console.Write("\nGuess a letter: ");
+                Console.Write($"\nYou have {lives}/5 lives remaining.\nGuess a letter: ");
                 string guess = Console.ReadLine();
                 if(guess.Length == 1) 
                         { 
@@ -51,7 +51,7 @@
                             else if (!pickedAnswer.Contains(guess))
                             {
                                 Console.WriteLine("That was a wrong guess.");
-                                wrongGuess++;
+                                lives--;
                             }
                     Console.Write('_');//to show how many characters and also the empty spaces
                 }
