@@ -39,14 +39,15 @@
                             {
 
 
-                                for (int j = pickedAnswer.Length - 1; j >= 0; j--)
-                                {
-                                    if (pickedAnswer[i] == guess[j])
-                                    {
-                                        Console.Write(guess);
-                                    }
+                                //for (int j = pickedAnswer.Length - 1; j >= 0; j--)
+                                //{
+                                //    if (pickedAnswer[i] == guess[j])
+                                //    {
+                                //        Console.Write(guess);
+                                //    }
                                     
-                                }
+                                //}
+                                
                             }
                             else if (!pickedAnswer.Contains(guess))
                             {
