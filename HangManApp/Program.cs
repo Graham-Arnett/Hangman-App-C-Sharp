@@ -27,13 +27,14 @@
                 //Console.WriteLine(pickedAnswer); 
                 Console.Write($"\nYou have {lives}/5 lives remaining.\nGuess a letter: ");
                 string guess = Console.ReadLine();
+                //char[] letter = guess.ToCharArray();
                 if(guess.Length == 1) 
                         { 
                         
                 for(int i = pickedAnswer.Length -1; i >= 0; i--)
                 {
-                           char letter = pickedAnswer[i];
-                            Console.WriteLine(pickedAnswer);
+                          
+                           
                           
                             if (pickedAnswer.Contains(guess))
                             {
@@ -45,11 +46,18 @@
                                 //    {
                                 //        Console.Write(guess);
                                 //    }
-                                    
+
                                 //}
+                                //pickedAnswer[i].ToString();
+                                string thisLetter = Char.ToString(pickedAnswer[i]);
+                                if(thisLetter == guess)
+                                {
+                                    Console.Write(guess);
+                                }
+
                                 
                             }
-                            else if (!pickedAnswer.Contains(guess))
+                            else if (!!pickedAnswer.Contains(guess))
                             {
                                 Console.WriteLine("That was a wrong guess.");
                                 lives--;
