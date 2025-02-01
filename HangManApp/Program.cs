@@ -8,7 +8,7 @@
             Random random = new Random();
             string choice;
             //lets put the array for possible answers here for now
-            string[] answers = {"London", "Paris","Berlin","Tokyo","Beijing","Seoul","Brussels"};
+            string[] answers = {"london", "paris","berlin","tokyo","beijing","seoul","brussels"};
             //char guess;
             bool gameEnd = false;
             bool isGuess = false;
@@ -33,9 +33,9 @@
                         
                 for(int i = pickedAnswer.Length -1; i >= 0; i--)
                 {
-                          
-                           
-                          
+
+                            string thisLetter = Char.ToString(pickedAnswer[i]);
+
                             if (pickedAnswer.Contains(guess))
                             {
 
@@ -49,7 +49,7 @@
 
                                 //}
                                 //pickedAnswer[i].ToString();
-                                string thisLetter = Char.ToString(pickedAnswer[i]);
+                                
                                 if(thisLetter == guess)
                                 {
                                     Console.Write(guess);
