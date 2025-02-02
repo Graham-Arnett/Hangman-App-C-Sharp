@@ -71,6 +71,11 @@
                             Console.WriteLine("That was a wrong guess.");
                             lives--;
                         }
+                        if(lives == 0)
+                        {
+                            Console.WriteLine("You have lost.");
+                            gameEnd = true;
+                        }
                     }
                     else
                     {
