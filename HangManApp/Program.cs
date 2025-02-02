@@ -29,42 +29,49 @@
                 string guess = Console.ReadLine();
                 //char[] letter = guess.ToCharArray();
                 if(guess.Length == 1) 
-                        { 
-                        
-                for(int i = pickedAnswer.Length -1; i >= 0; i--)
-                {
-
-                            string thisLetter = Char.ToString(pickedAnswer[i]);
-
-                            if (pickedAnswer.Contains(guess))
+                        {
+                        if (pickedAnswer.Contains(guess))
+                        {
+                            for (int i = pickedAnswer.Length - 1; i >= 0; i--)
                             {
 
+                                string thisLetter = Char.ToString(pickedAnswer[i]);
 
-                                //for (int j = pickedAnswer.Length - 1; j >= 0; j--)
+                                //if (pickedAnswer.Contains(guess))
                                 //{
-                                //    if (pickedAnswer[i] == guess[j])
-                                //    {
-                                //        Console.Write(guess);
-                                //    }
+
+
+                                    //for (int j = pickedAnswer.Length - 1; j >= 0; j--)
+                                    //{
+                                    //    if (pickedAnswer[i] == guess[j])
+                                    //    {
+                                    //        Console.Write(guess);
+                                    //    }
+
+                                    //}
+                                    //pickedAnswer[i].ToString();
+
+                                    if (thisLetter == guess)
+                                    {
+                                        Console.Write(guess);
+                                    }
+
 
                                 //}
-                                //pickedAnswer[i].ToString();
-                                
-                                if(thisLetter == guess)
-                                {
-                                    Console.Write(guess);
-                                }
-
-                                
+                                //else
+                                //{
+                                //    Console.WriteLine("That was a wrong guess.");
+                                //    lives--;
+                                //}
+                                Console.Write('_');//to show how many characters and also the empty spaces
                             }
-                            else if (!!pickedAnswer.Contains(guess))
-                            {
-                                Console.WriteLine("That was a wrong guess.");
-                                lives--;
-                            }
-                    Console.Write('_');//to show how many characters and also the empty spaces
-                }
                         }
+                        else
+                        {
+                            Console.WriteLine("That was a wrong guess.");
+                            lives--;
+                        }
+                    }
                     else
                     {
                         Console.WriteLine("Invalid input, enter a single letter");
