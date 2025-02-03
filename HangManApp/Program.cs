@@ -55,7 +55,10 @@
                                     {
                                         Console.Write(guess);
                                     }
-
+                                else
+                                {
+                                    Console.Write('_');
+                                }
 
                                 //}
                                 //else
@@ -63,7 +66,7 @@
                                 //    Console.WriteLine("That was a wrong guess.");
                                 //    lives--;
                                 //}
-                                Console.Write('_');//to show how many characters and also the empty spaces
+                                //Console.Write('_');//to show how many characters and also the empty spaces
                             }
                         }
                         else
