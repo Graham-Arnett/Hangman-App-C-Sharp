@@ -32,7 +32,8 @@
                         {
                         if (pickedAnswer.Contains(guess))
                         {
-                            for (int i = pickedAnswer.Length - 1; i >= 0; i--)
+                            //for (int i = pickedAnswer.Length - 1; i >= 0; i--)
+                            for(int i = 0; i < pickedAnswer.Length; i++)
                             {
 
                                 string thisLetter = Char.ToString(pickedAnswer[i]);
