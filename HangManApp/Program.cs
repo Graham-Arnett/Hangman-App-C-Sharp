@@ -15,7 +15,7 @@
             int lives = 5;
             //int pickedIndex = random.Next(0, answers.Length);
             //string pickedAnswer = answers[pickedIndex];
-            string pickedAnswer = answers[1];
+            string pickedAnswer = answers[3];
             Console.WriteLine(pickedAnswer);
             do
             {
