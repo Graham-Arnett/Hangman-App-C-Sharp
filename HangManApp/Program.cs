@@ -10,16 +10,18 @@
             //lets put the array for possible answers here for now
             string[] answers = {"london", "paris","berlin","tokyo","beijing","seoul","brussels"};
             //char guess;
-            bool gameEnd = false;
+            //bool gameEnd = false;
             bool isGuess = false;
-            int lives = 5;
+            //int lives = 5;
             //int pickedIndex = random.Next(0, answers.Length);
             //string pickedAnswer = answers[pickedIndex];
             string pickedAnswer = answers[3];
             Console.WriteLine(pickedAnswer);
             do
             {
-                while(gameEnd == false) 
+                bool gameEnd = false;
+                int lives = 5;
+                while (gameEnd == false) 
                     { 
                     
                 //pickedIndex = random.Next(0,answers.Length);
@@ -32,7 +34,7 @@
                         {
                         if (pickedAnswer.Contains(guess))
                         {
-                            //for (int i = pickedAnswer.Length - 1; i >= 0; i--)
+                            
                             for(int i = 0; i < pickedAnswer.Length; i++)
                             {
 
