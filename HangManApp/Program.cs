@@ -17,6 +17,7 @@
             //string pickedAnswer = answers[pickedIndex];
             string pickedAnswer = answers[3];
             Console.WriteLine(pickedAnswer);
+            string fullGuess = "";//testing out to see if I can add the guesses together to make a full guess
             do
             {
                 bool gameEnd = false;
@@ -57,12 +58,18 @@
                                     if (thisLetter == guess)
                                     {
                                         Console.Write(guess);
+                                    fullGuess += guess;
                                     }
                                 else
                                 {
                                     Console.Write('_');
                                 }
 
+                                    if(fullGuess == pickedAnswer)
+                                {
+                                    Console.WriteLine("You have won!");
+                                    gameEnd = true;
+                                }
                                 //}
                                 //else
                                 //{
