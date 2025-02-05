@@ -57,19 +57,15 @@
 
                                     if (thisLetter == guess)
                                     {
-                                        Console.Write(guess);
                                     fullGuess += guess;
+                                    Console.Write(fullGuess);
                                     }
                                 else
                                 {
                                     Console.Write('_');
                                 }
 
-                                    if(fullGuess == pickedAnswer)
-                                {
-                                    Console.WriteLine("You have won!");
-                                    gameEnd = true;
-                                }
+                            
                                 //}
                                 //else
                                 //{
@@ -87,6 +83,11 @@
                         if(lives == 0)
                         {
                             Console.WriteLine("You have lost.");
+                            gameEnd = true;
+                        }
+                        else if(fullGuess == pickedAnswer)
+                        {
+                            Console.WriteLine("You have won!");
                             gameEnd = true;
                         }
                     }
