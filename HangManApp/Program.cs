@@ -45,30 +45,30 @@
                                 //{
 
 
-                                    for (int j = 0; j < pickedAnswer.Length; j++)
-                                    {
-                                        if (thisLetter == guess)
-                                        {
-                                        fullGuess += guess;
-                                        Console.Write(fullGuess);
-                                        }
-                                    else
-                                    {
-                                        Console.Write("_");
-                                    }
+                                   // for (int j = 0; j < pickedAnswer.Length; j++)
+                                   // {
+                                   //     if (thisLetter == guess)
+                                   //     {
+                                   //     fullGuess += guess;
+                                   //     Console.Write(fullGuess);
+                                   //     }
+                                   // else
+                                   // {
+                                   //     Console.Write("_");
+                                   // }
 
-                                    }
-                                   // pickedAnswer[i].ToString();
+                                   // }
+                                   //// pickedAnswer[i].ToString();
 
-                                //    if (thisLetter == guess)
-                                //    {
-                                //    fullGuess += guess;
-                                //    Console.Write(fullGuess);
-                                //    }
-                                //else
-                                //{
-                                //    Console.Write('_');
-                                //}
+                                    if (thisLetter == guess)
+                                    {
+                                    fullGuess += guess;
+                                    Console.Write(fullGuess);
+                                    }
+                                else
+                                {
+                                    Console.Write('_');
+                                }
 
                             
                                 //}
