@@ -45,25 +45,30 @@
                                 //{
 
 
-                                    //for (int j = pickedAnswer.Length - 1; j >= 0; j--)
-                                    //{
-                                    //    if (pickedAnswer[i] == guess[j])
-                                    //    {
-                                    //        Console.Write(guess);
-                                    //    }
-
-                                    //}
-                                    //pickedAnswer[i].ToString();
-
-                                    if (thisLetter == guess)
+                                    for (int j = 0; j < pickedAnswer.Length; j++)
                                     {
-                                    fullGuess += guess;
-                                    Console.Write(fullGuess);
+                                        if (thisLetter == guess)
+                                        {
+                                        fullGuess += guess;
+                                        Console.Write(fullGuess);
+                                        }
+                                    else
+                                    {
+                                        Console.Write("_");
                                     }
-                                else
-                                {
-                                    Console.Write('_');
-                                }
+
+                                    }
+                                   // pickedAnswer[i].ToString();
+
+                                //    if (thisLetter == guess)
+                                //    {
+                                //    fullGuess += guess;
+                                //    Console.Write(fullGuess);
+                                //    }
+                                //else
+                                //{
+                                //    Console.Write('_');
+                                //}
 
                             
                                 //}
