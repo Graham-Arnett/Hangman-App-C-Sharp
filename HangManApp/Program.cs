@@ -92,7 +92,7 @@
                         }
                         else if(fullGuess == pickedAnswer)
                         {
-                            Console.WriteLine("You have won!");
+                            Console.WriteLine("\nYou have won!");
                             gameEnd = true;
                         }
                     }
