@@ -13,9 +13,9 @@
             //bool gameEnd = false;
             bool isGuess = false;
             //int lives = 5;
-            //int pickedIndex = random.Next(0, answers.Length);
-            //string pickedAnswer = answers[pickedIndex];
-            string pickedAnswer = answers[1];
+            int pickedIndex = random.Next(0, answers.Length);
+            string pickedAnswer = answers[pickedIndex];
+            //string pickedAnswer = answers[1];
             Console.WriteLine(pickedAnswer);
             string fullGuess = "";//testing out to see if I can add the guesses together to make a full guess
             do
