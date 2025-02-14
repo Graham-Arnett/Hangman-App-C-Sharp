@@ -36,10 +36,10 @@
                         {
                         if (pickedAnswer.Contains(guess))
                         {
-                            
-                            for(int i = 0; i < pickedAnswer.Length; i++)
+                            Console.Write("\n" + guessedLetters);
+                            for (int i = 0; i < pickedAnswer.Length; i++)
                             {
-                                Console.Write("\n" + guessedLetters);
+                                
 
                                 string thisLetter = Char.ToString(pickedAnswer[i]);
 
