@@ -22,6 +22,7 @@
             {
                 bool gameEnd = false;
                 int lives = 5;
+                char[] guessedLetters;
                 while (gameEnd == false) 
                     { 
                     
@@ -31,7 +32,7 @@
                 Console.Write($"\nYou have {lives}/5 lives remaining.\nGuess a letter: ");
                 string guess = Console.ReadLine();
                     //char[] letter = guess.ToCharArray();
-                    char[] guessedLetters = guess.ToCharArray();
+                    guessedLetters = guess.ToCharArray();
                 if(guess.Length == 1) 
                         {
                         if (pickedAnswer.Contains(guess))
