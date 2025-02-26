@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, welcome to my Hangmanapp");
+            Console.WriteLine("Hello, welcome to my Hangman app");
             Random random = new Random();
             string choice;
             //lets put the array for possible answers here for now
@@ -114,7 +114,7 @@
                         Console.WriteLine("Invalid input, enter a single letter");
                     }
 
-                    }
+                    }//wait, this program is also broken, but the lives system works, I gotta reference this when fixing wordle
                 Console.Write("\n\nWould you like to go again? (y/n): ");
                 choice = Console.ReadLine().ToLower();
             } while (choice == "y");
