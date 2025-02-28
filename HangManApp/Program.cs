@@ -20,6 +20,7 @@
             string fullGuess = "";//testing out to see if I can add the guesses together to make a full guess
             do
             {
+                //come to think of it, should probably make it so letters are filtered to being lowercase, will do in morning
                 bool gameEnd = false;
                 int lives = 5;
                 char[] guessedLetters;
